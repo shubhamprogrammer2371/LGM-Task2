@@ -8,7 +8,7 @@ function App() {
 
   const getUsers = async () => {
 
-    const response = await fetch("https://reqres.in/api/users?");
+    const response = await fetch("https://reqres.in/api/users?page=1");
     const data = await response.json();
     setUsers(data.data);
   };
